@@ -19,7 +19,7 @@ class PrototypesController < ApplicationController
       redirect_to root_path, notice: 'プロトタイプが正常に作成されました。'
     else
       puts "Prototype errors: #{@prototype.errors.full_messages}"
-      render :index, status: :unprocessable_entity
+      render :new, status: :unprocessable_entity
     end
   end
 
