@@ -5,7 +5,7 @@
       <div class="greeting"> 
         こんにちは、
         <%= link_to "#{current_user.name}さん", user_path(current_user), class: :greeting__link %>
-        <%= render partial: "form", locals: { prototype: @prototype } %>
+        
       </div>
     <% end %>
     <%# ログインしているときは上記を表示する %>
@@ -15,3 +15,4 @@
     </div>
   </div>
 </main>
+
